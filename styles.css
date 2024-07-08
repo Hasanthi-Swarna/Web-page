@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    font-family: "Lexend Deca";
+}
+.Header .Headerimg{
+    height: auto;
+    background-size: cover;
+}
+.navbar{
+    width: 1600px;
+}
+.navbar .logo{
+    color: yellow;
+}
+
+.navbar .logo .highlight1 {
+    color: red;
+}
+
+.navbar .logo .highlight2 {
+    color: green;
+}
+.navbar .nav-links{
+    float: right;
+    font-size: medium;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.navbar .nav-links a{
+    display: block;
+    color: gray;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-links a:hover {
+    background: rgb(236, 217, 107); 
+    color: white;
+}
+.Header .Headertext p{
+    color:green;
+}
+.Header .Headertext .Home{
+    width: 20px;
+    height: 20px;
+}
+.Header .Headertext h1{
+    color: white;
+}
+.Header .Headertext{
+    position: absolute;
+    top: 400px;
+    width: 1600px; 
+    height: 1000px;
+    font-size: large;
+    text-align: center;
+}
+.Header .Menu {
+    width: 900px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+    justify-content: center;
+    margin-top: 20px;
+    font-size:medium;
+    top:-420px;
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    gap: 30px;
+    text-align: center;
+}
+.Header .Menu input{
+    width: 300px;
+    border: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.Header .Menu select{
+    width: 200px;
+    border:10px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.input{
+    border: 2px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+}
+.select{
+    border: 2px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+}
+.select .price{
+    color: gray;
+}
+.Header .Menu button {
+    margin-left: 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.Bottomcontent{
+    display: flex;
+}
+.green{
+    color: green;
+}
+.Bottomimgs {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    padding-left: 50px;
+}
+
+.circle-image1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.circle-image2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 75%;
+    object-fit: cover;
+}
+.Bottomtext{
+    color: gray;
+    padding-left: 90px;
+}
+.color1{
+    color: gray;
+}
+.color2{
+    color: black;
+}
