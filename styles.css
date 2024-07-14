@@ -33,6 +33,9 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+.navbar .hamburger{
+    display: none;
+}
 .nav-links a:hover {
     background: rgb(236, 217, 107); 
     color: white;
@@ -59,28 +62,23 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
-    margin-top: 20px;
     font-size:medium;
     top:-420px;
     background-color: white;
-    background-size: contain;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: none;
     border-radius: 10px;
     gap: 30px;
-    text-align: center;
+    text-align: center;    
 }
 .Header .Menu input{
-    width: 300px;
     border: 10px;
     align-items: center;
     justify-content: center;
 }
 .Header .Menu select{
-    width: 300px;
     border:10px;
     align-items: center;
     justify-content: center;
@@ -116,6 +114,7 @@
 }
 .Bottomcontent{
     display: inline-flex;
+    gap: 50px;
 }
 .green{
     color: green;
@@ -144,7 +143,6 @@
 }
 .Bottomtext{
     color: gray;
-    padding-left: 90px;
 }
 .color1{
     color: gray;
@@ -152,7 +150,33 @@
 .color2{
     color: black;
 }
-
+@media(max-width:1180px){
+    .navbar .hamburger img{
+        width: 20px;
+        height: 20px;
+        display: flex-end;
+    }    
+    .Bottomcontent{
+        flex-direction: column;
+    }
+    .circle-image1 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 20px;
+    }
+    .circle-image2 {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 20px;
+    }
+    .Menu{
+        justify-content: center;
+    }
+}
 @media (max-width: 768px) {
     .Headerimg{
         width: 100%;
@@ -167,8 +191,9 @@
 
     .Menu {
         flex-direction: column;
-        width: 100%;
         max-width: 400px;
+        font-size: small;
+        justify-content: center;
     }
 
     .Bottomtext {
@@ -179,15 +204,34 @@
         flex-direction: column;
         align-items: center;
     }
-
-    .circle-image1,
-    .circle-image2 {
-        width: 150px;
-        height: 150px;
+    .circle-image1 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 20px;
     }
+    .circle-image2 {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 20px;
+    }
+    .navbar .hamburger img{
+        width: 20px;
+        height: 20px;
+    }    
 }
 
 @media (max-width: 480px) {
+    .navbar .hamburger img{
+        width: 20px;
+        height: 20px;
+    }   
+    .navbar .nav-links{
+        display: none;
+    } 
     .Headertext {
         padding: 1rem;
     }
@@ -201,13 +245,30 @@
     }
 
     .Menu {
+        margin-left: auto;
+        margin-right: auto;
         padding: 1rem;
         max-width: 300px;
+        size: 1rem;
+        justify-content: center;
+        align-items: center;
     }
-
-    .circle-image1,
+    .Bottomcontent{
+        display: block;
+        gap: 0px;
+    }
+    .circle-image1 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 20px;
+    }
     .circle-image2 {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 20px;
     }
 }
