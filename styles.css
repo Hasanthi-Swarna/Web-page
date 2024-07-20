@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-*{
+* {
     font-family: "Lexend Deca";
 }
-.Header .Headerimg{
+
+.Header .Headerimg {
     height: auto;
     background-size: cover;
 }
-.navbar{
+
+.navbar {
     width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.navbar .logo{
+
+.navbar .logo {
     color: yellow;
 }
 
@@ -20,71 +26,89 @@
 .navbar .logo .highlight2 {
     color: green;
 }
-.navbar .nav-links{
-    float: right;
+
+.navbar .nav-links {
     font-size: medium;
     list-style: none;
     display: flex;
     margin: 0;
 }
-.navbar .nav-links a{
+
+.navbar .nav-links a {
     display: block;
     color: gray;
     padding-left: 20px;
     padding-right: 20px;
 }
-.navbar .hamburger{
+
+.navbar .hamburger {
     display: none;
 }
-.nav-links a:hover {
-    background: rgb(236, 217, 107); 
-    color: white;
-}
-.Header .Headertext p{
-    color:green;
-}
-.Header .Headertext .Home{
+
+.navbar .hamburger img {
     width: 20px;
     height: 20px;
 }
-.Header .Headertext h1{
+
+.nav-links a:hover {
+    background: rgb(236, 217, 107);
     color: white;
 }
-.Header .Headertext{
+
+.Header .Headertext p {
+    color: green;
+}
+
+.Header .Headertext .Home {
+    width: 20px;
+    height: 20px;
+}
+
+.Header .Headertext h1 {
+    color: white;
+}
+
+.Header .Headertext {
     position: absolute;
     top: 400px;
-    width: 1600px; 
+    width: 1600px;
     height: 1000px;
     font-size: large;
     text-align: center;
 }
+
 .Header .Menu {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:medium;
-    top:-420px;
+    font-size: medium;
+    top: -420px;
     background-color: white;
+    width: 800px;
     padding-top: 20px;
     padding-bottom: 20px;
     border: none;
     border-radius: 10px;
     gap: 30px;
-    text-align: center;    
+    text-align: center;
 }
-.Header .Menu input{
+
+.Header .Menu input {
     border: 10px;
     align-items: center;
     justify-content: center;
 }
-.Header .Menu select{
-    border:10px;
+
+.Header .Menu select {
+    border: 10px;
     align-items: center;
     justify-content: center;
     background-color: white;
+    width: 200px;
 }
-.input{
+
+.input {
     border: 2px;
     border-style: solid;
     border-color: gray;
@@ -92,7 +116,8 @@
     padding: 5px;
     display: flex;
 }
-.select{
+
+.select {
     border: 2px;
     border-style: solid;
     border-color: gray;
@@ -100,25 +125,30 @@
     padding: 5px;
     display: flex;
 }
-.select .price{
+
+.select .price {
     color: gray;
 }
+
 .Header .Menu button {
     margin-left: 20px;
     background-color: orangered;
     color: white;
     border: none;
-    border-radius: 10px; 
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
 }
-.Bottomcontent{
+
+.Bottomcontent {
     display: inline-flex;
     gap: 50px;
 }
-.green{
+
+.green {
     color: green;
 }
+
 .Bottomimgs {
     align-items: center;
     display: flex-end;
@@ -127,6 +157,7 @@
     margin-left: auto;
     padding: 20px;
 }
+
 .circle-image1 {
     width: 200px;
     height: 200px;
@@ -134,6 +165,7 @@
     object-fit: cover;
     padding: 20px;
 }
+
 .circle-image2 {
     width: 300px;
     height: 300px;
@@ -141,59 +173,55 @@
     object-fit: cover;
     padding: 20px;
 }
-.Bottomtext{
+
+.Bottomtext {
     color: gray;
 }
-.color1{
+
+.color1 {
     color: gray;
 }
-.color2{
+
+.color2 {
     color: black;
 }
-@media(max-width:1180px){
-    .navbar .hamburger img{
-        width: 20px;
-        height: 20px;
-        display: flex-end;
-    }    
-    .Bottomcontent{
-        flex-direction: column;
-    }
-    .circle-image1 {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        padding: 20px;
-    }
-    .circle-image2 {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        object-fit: cover;
-        padding: 20px;
-    }
-    .Menu{
-        justify-content: center;
-    }
-}
+
 @media (max-width: 768px) {
-    .Headerimg{
+    .navbar {
         width: 100%;
     }
-    .Headertext h1 {
-        font-size: 2rem;
+
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
     }
 
-    .Headertext p {
-        font-size: 1rem;
+    .navbar .hamburger {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Headertext h1 {
+        font-size: 2rem;
     }
 
     .Menu {
         flex-direction: column;
         max-width: 400px;
-        font-size: small;
-        justify-content: center;
     }
 
     .Bottomtext {
@@ -204,6 +232,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .circle-image1 {
         width: 200px;
         height: 200px;
@@ -211,6 +240,7 @@
         object-fit: cover;
         padding: 20px;
     }
+
     .circle-image2 {
         width: 300px;
         height: 300px;
@@ -218,20 +248,21 @@
         object-fit: cover;
         padding: 20px;
     }
-    .navbar .hamburger img{
-        width: 20px;
-        height: 20px;
-    }    
 }
 
 @media (max-width: 480px) {
-    .navbar .hamburger img{
-        width: 20px;
-        height: 20px;
-    }   
-    .navbar .nav-links{
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+
+    .navbar .nav-links {
         display: none;
-    } 
+    }
+
     .Headertext {
         padding: 1rem;
     }
@@ -250,13 +281,13 @@
         padding: 1rem;
         max-width: 300px;
         size: 1rem;
-        justify-content: center;
-        align-items: center;
     }
-    .Bottomcontent{
+
+    .Bottomcontent {
         display: block;
         gap: 0px;
     }
+
     .circle-image1 {
         width: 150px;
         height: 150px;
@@ -264,6 +295,7 @@
         object-fit: cover;
         padding: 20px;
     }
+
     .circle-image2 {
         width: 200px;
         height: 200px;
